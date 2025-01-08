@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.app-container {
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+@media (max-width : 767px){
+  .app-container{
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+.form-container {
+  width: 40%;
+  background-color: #353235;
+  padding: 15px;
+  height: 100%;
+  flex-grow: 1;
+}
+@media (max-width : 767px){
+  .form-container{
+    width: 100%;
+    
+  }
+}
+@media (min-width : 1200px) {
+  .form-container {
+    flex-grow: 0;
+  }
+}
+.form-heading {
+  color: #f3aa4e;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+.label {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.task-input {
+  height: 60px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: 0px;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+}
+.tags-dropdown {
+  font-size: 20px;
+  height: 60px;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: 0px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.add-task-btn {
+  font-size: 20px;
+  border: 0px;
+  background-color: #f3aa4e;
+  color: #ffffff;
+  padding: 10px;
+  width: 120px;
+  height: 60px;
+  border-radius: 10px;
+}
+.tags-container {
+  color: #ffffff;
+}
+.dynamic-section-container {
+  background-color: #131213;
+  padding: 15px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  height: 100%;
+  color: #ffffff;
+  flex-grow: 1;
+}
+.all-tags-items {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tasks-list-container {
+  padding: 0px;
+  list-style-type: none;
+  height:370px;
+  overflow: auto;
+}
+.tasks-list-container::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+.tasks-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the track */
+}
+
+.tasks-list-container::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar handle */
+  border-radius: 5px; /* Round edges */
+}
+
+.tasks-list-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar handle on hover */
+}
+@media (min-width : 1200px ){
+  .tasks-list-container{
+    height: 400px;
+  }
+}

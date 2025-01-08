@@ -1,0 +1,29 @@
+.tag-button {
+    padding: 10px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+@media (max-width : 767px) {
+  .tag-button{
+    font-size: 17px;
+  }
+}
+.selected-tag {
+    padding: 10px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #f3aa4e;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  @media (max-width : 767px) {
+    .selected-tag{
+      font-size: 17px;
+    }
+  }

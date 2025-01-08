@@ -1,0 +1,39 @@
+.task-item {
+    list-style-type: none;
+    background-color: #323f4b;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+.task-item-tag {
+    color: #1a171d;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #f3aa4e;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0px;
+  }
+.delete-button{
+    background-color: transparent;
+    font-size: 15px;
+    border: 0px;
+    padding: 0px;
+    outline: none;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+.task-details-container{
+    width : 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
